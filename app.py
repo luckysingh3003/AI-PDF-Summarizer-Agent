@@ -12,7 +12,7 @@ st.title("📄 PDF Summarizer Agent")
 st.caption("Upload a PDF → get summary, key points, and an auto-generated quiz.")
 
  
-hf_token ="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"
+hf_token =" "
 if not hf_token:
     hf_token = st.sidebar.text_input("HuggingFace Token", type="password")
 
