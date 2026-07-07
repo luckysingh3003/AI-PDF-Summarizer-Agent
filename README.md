@@ -1,24 +1,78 @@
 # 📄 AI PDF Summarizer Agent
 
-An AI-powered PDF Summarizer built with **Python**, **Streamlit**, and **Llama 3.1 (via Hugging Face Inference API)**. Upload any PDF document to instantly generate a concise summary, extract key points, and create an AI-generated quiz.
+## Overview
 
-## 🚀 Live Demo
+AI PDF Summarizer Agent is an AI-powered application that helps users quickly understand lengthy PDF documents. Users can upload a PDF, and the application automatically generates:
 
-https://ai-pdf-summarizer-agent-jjgeyrqjhzx5xhuhwya7dt.streamlit.app/
+- 📝 Summary
+- ⭐ Key Points
+- ❓ Quiz Questions
 
----
-
-## ✨ Features
-
-- 📄 Upload PDF documents
-- 📝 Generate concise AI summaries
-- ⭐ Extract important key points
-- ❓ Automatically generate quizzes
-- ⚡ Simple and user-friendly Streamlit interface
+The project is built using **Python**, **Streamlit**, and **Meta Llama 3.1 (via Hugging Face Inference API)**.
 
 ---
 
-## 🛠️ Tech Stack
+# Problem Statement
+
+Reading long PDF documents is time-consuming. Students, researchers, and professionals often need to extract the most important information quickly without reading every page.
+
+This project solves that problem by automatically summarizing documents and generating learning material.
+
+---
+
+# Solution
+
+The AI PDF Summarizer Agent follows these steps:
+
+1. Upload a PDF.
+2. Extract text from the document.
+3. Send the extracted text to the Llama 3.1 model.
+4. Generate:
+   - Summary
+   - Key Points
+   - Quiz Questions
+5. Display results in an easy-to-use interface.
+
+---
+
+# Features
+
+- 📄 PDF Upload
+- 📝 AI Summary
+- ⭐ Key Point Extraction
+- ❓ AI Quiz Generation
+- ⚡ Simple Streamlit Interface
+
+---
+
+# Architecture
+
+```text
+                User
+                  │
+                  ▼
+          Upload PDF (Streamlit)
+                  │
+                  ▼
+          PDF Text Extraction
+              (PyPDF2)
+                  │
+                  ▼
+      Hugging Face Inference API
+         (Meta Llama 3.1 8B)
+                  │
+                  ▼
+    ┌─────────────┼─────────────┐
+    ▼             ▼             ▼
+ Summary      Key Points      Quiz
+    └─────────────┼─────────────┘
+                  ▼
+          Results Displayed
+```
+
+---
+
+# Tech Stack
 
 - Python
 - Streamlit
@@ -28,7 +82,7 @@ https://ai-pdf-summarizer-agent-jjgeyrqjhzx5xhuhwya7dt.streamlit.app/
 
 ---
 
-## 📂 Project Structure
+# Project Structure
 
 ```
 AI-PDF-Summarizer-Agent/
@@ -38,28 +92,3 @@ AI-PDF-Summarizer-Agent/
 ├── README.md
 └── .streamlit/
 ```
-
----
-
-## 🎯 Future Improvements
-
-- Chat with PDF
-- Multi-document support
-- Flashcard generation
-- Multi-language summaries
-- Conversation memory
-- Export summary as PDF
-
----
-
-## 👨‍💻 Author
-
-**Lucky**
-
-GitHub: https://github.com/luckysingh3003
-
----
-
-## ⭐ If you like this project
-
-Please consider giving it a ⭐ on GitHub.
