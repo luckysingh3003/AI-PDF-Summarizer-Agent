@@ -54,7 +54,7 @@ AI-PDF-Summarizer-Agent/
 
 ## 👨‍💻 Author
 
-**Lucky Singh**
+**Lucky**
 
 GitHub: https://github.com/luckysingh3003
 
