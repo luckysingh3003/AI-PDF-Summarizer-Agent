@@ -41,14 +41,6 @@ AI-PDF-Summarizer-Agent/
 
 ---
 
- 
-
-## 🎥 Demo Video
-
-Add your YouTube (Unlisted) demo video link here.
-
----
-
 ## 🎯 Future Improvements
 
 - Chat with PDF
